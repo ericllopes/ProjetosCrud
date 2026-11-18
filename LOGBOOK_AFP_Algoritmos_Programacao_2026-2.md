@@ -270,13 +270,14 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 03 — 26/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Compreender como utilizar operadores e estruturas lógicas para controlar o funcionamento do CRUD de controle remoto._
+2. **O que implementei (commits / arquivos / links):** _Desenvolvimento inicial do CRUD de controle remoto em Python, utilizando variáveis e estruturas condicionais._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Operadores aritméticos, relacionais e lógicos; tipos de dados; expressões booleanas e lógica de programação.
+_
+4. **Desvio ou erro encontrado + causa técnica:** _Tive dificuldade em compreender como algumas expressões e operadores influenciam o resultado das condições do programa, principalmente na construção da lógica de execução_
+5. **Decisão de ajuste + fonte:** _Revisar o funcionamento dos operadores e das expressões booleanas, relacionando-os às condições utilizadas no CRUD. Fonte: documentação oficial do Python._
+6. **Feedback recebido e o que mudei:** _A necessidade de organizar melhor a lógica do programa mostrou a importância de compreender as condições antes de implementar novas funcionalidades._
+7. **Próximo passo:** _Aprimorar a lógica do CRUD e compreender melhor as estruturas condicionais._
 
 ## 🟢 CICLO 04 — 02/09 — Estruturas condicionais: `if`, `elif`, `else`
 
