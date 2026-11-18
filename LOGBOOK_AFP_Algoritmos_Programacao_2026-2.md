@@ -109,7 +109,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 1 | Identificação | 16/11 | ✅ | ✅ |
 | 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ✅ | ✅ |
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
-| 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
+| 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
 | 2 | Campo 03 — Execução e desvios | 21/11 | ⬜ | ⬜ |
@@ -165,9 +165,9 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 **Checklist do Grupo 1**
 - [✅] Identificação preenchida (app-base, link do repositório, dupla de revisão)
 - [✅] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
-- [ ] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
-- [ ] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
-- [ ] Commits no GitHub e painel atualizado
+- [✅] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
+- [✅] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
+- [✅] Commits no GitHub e painel atualizado
 
 ## 🟢 CICLO 01 — 12/08 — Preparação do laboratório e escolha do projeto
 
@@ -234,10 +234,10 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
 
-- **Referência 1:** _…_ — **Contribuição:** _…_
-- **Referência 2:** _…_ — **Contribuição:** _…_
+- **Referência 1:** _https://docs.python.org/pt-br/3/tutorial/datastructures.html_ — **Contribuição:** _A documentação explica como trabalhar com listas e dicionários em Python. As listas permitem armazenar vários controles em uma única estrutura, utilizando métodos como append() para adicionar elementos e remove() ou pop() para removê-los. Os dicionários permitem organizar os atributos de cada controle por pares de chave e valor, facilitando o acesso e a atualização de informações como marca, tipo, volume e canal_
+- **Referência 2:** _br/resources/products/fundamentals/crud_ — **Contribuição:** _A referência apresenta as quatro operações fundamentais de um CRUD: Create (criar), Read (consultar), Update (atualizar) e Delete (excluir). Isso ajuda a compreender a finalidade de cada funcionalidade do projeto e a organizar o código para que o usuário consiga cadastrar, visualizar, modificar e remover controles remotos. Embora a referência utilize exemplos de banco de dados, os conceitos também se aplicam ao CRUD desenvolvido em Python com listas e dicionários_
 
-**2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:**
+**2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:*Após a pesquisa, compreendi que minha dificuldade não estava apenas na escolha do aplicativo-base, mas também na organização e manipulação dos dados dentro do programa. A utilização de listas e dicionários pode facilitar o armazenamento e o gerenciamento de vários controles remotos. Além disso, compreender as quatro operações do CRUD permite estruturar melhor as funcionalidades do sistema. Portanto, acredito que dominar essas estruturas e sua aplicação será essencial para desenvolver um CRUD funcional.*
 
 > _…_
 
@@ -245,9 +245,9 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
+| _Documentação e referências de estudo_ | _2 fontes_ | _Consultar materiais sobre estruturas de dados e operações CRUD_ |
+| _Tempo de estudo e desenvolvimento_ | _3 horas_ | _Estudar listas, dicionários e aplicar os conceitos na refatoração do código._ |
+| _Casos de teste_ | _±6 testes_ | _Testar as quatro operações do CRUD, verificando situações de sucesso e possíveis erros._ |
 | _…_ | _…_ | _…_ |
 
 #### Registro do Ciclo 02 — 19/08
