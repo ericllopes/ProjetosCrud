@@ -1,112 +1,79 @@
+# variaveis do controle remoto
 
-# LISTA QUE ARMAZENA TODOS OS CONTROLES
-controles = []
-
-# CONTADOR PARA GERAR IDs
-proximo_id = 1
+marca = "" # armazena a marca do controle
+tipo = "" # armazena o tipo de controle
+volume = 10 # define o volume inicial da tv
+canal = 1 # define o canal inicial da tv
+ligado = False # indica se a tv esta ligada ou nao
+cadastrado = False # indica se existe um controle ou nao
 
 while True:
 
     print("\n===== CONTROLE REMOTO =====")
     print("1 - Cadastrar controle")
-    print("2 - Ver controles")
+    print("2 - Ver controle")
     print("3 - Atualizar controle")
     print("4 - Excluir controle")
     print("5 - Usar controle")
     print("0 - Sair")
 
-    opcao = input("\nEscolha uma ação: ")
+    opcao = input("\nEscolha uma ação:")
 
     # CRIAR
+
     if opcao == "1":
 
-        marca = input("Digite a marca: ")
-        tipo = input("Digite o tipo: ")
+        if cadastrado == False:
+            marca = input("Digite a marca: ")
+            tipo = input("Digite o tipo: ")
+            cadastrado = True
 
-        # CRIA UM DICIONÁRIO COM OS DADOS DO CONTROLE
-        controle = {
-            "id": proximo_id,
-            "marca": marca,
-            "tipo": tipo,
-            "volume": 10,
-            "canal": 1,
-            "ligado": False
-        }
+            print("Controle cadastrado!")
 
-        # ADICIONA O DICIONÁRIO NA LISTA
-        controles.append(controle)
-
-        print("Controle cadastrado com sucesso!")
-        print("ID do controle:", proximo_id)
-
-        proximo_id += 1
+        else:
+            print("Já existe um controle cadastrado")
 
     # VISUALIZAR
+
     elif opcao == "2":
 
-        if len(controles) > 0:
-
-            print("\n--- CONTROLES CADASTRADOS ---")
-
-            for controle in controles:
-
-                print("\nID:", controle["id"])
-                print("Marca:", controle["marca"])
-                print("Tipo:", controle["tipo"])
-                print("Volume:", controle["volume"])
-                print("Canal:", controle["canal"])
-                print("Status:", "Ligada" if controle["ligado"] else "Desligada")
+        if cadastrado == True:
+            print("\n--- INFORMAÇÕES DO CONTROLE ---")
+            print("Marca:", marca)
+            print("Tipo:", tipo)
+            print("Volume:", volume)
+            print("Canal:", canal)
+            print("Status:", ligado)
 
         else:
             print("Nenhum controle cadastrado!")
 
     # ATUALIZAR
+
     elif opcao == "3":
 
-        if len(controles) > 0:
+        if cadastrado == True:
+            marca = input("Digite a nova marca: ")
+            modelo = input("Digite o novo tipo: ")
 
-            id_busca = int(input("Digite o ID do controle: "))
-
-            encontrado = False
-
-            for controle in controles:
-
-                if controle["id"] == id_busca:
-
-                    controle["marca"] = input("Digite a nova marca: ")
-                    controle["tipo"] = input("Digite o novo tipo: ")
-
-                    print("Controle atualizado!")
-                    encontrado = True
-                    break
-
-            if encontrado == False:
-                print("ID não encontrado!")
+            print("Controle atualizado!")
 
         else:
             print("Nenhum controle cadastrado!")
 
     # DELETAR
+
     elif opcao == "4":
 
-        if len(controles) > 0:
+        if cadastrado == True:
+            marca = ""
+            modelo = ""
+            volume = 10
+            canal = 1
+            ligado = False
+            cadastrado = False
 
-            id_busca = int(input("Digite o ID do controle: "))
-
-            encontrado = False
-
-            for controle in controles:
-
-                if controle["id"] == id_busca:
-
-                    controles.remove(controle)
-
-                    print("Controle excluído!")
-                    encontrado = True
-                    break
-
-            if encontrado == False:
-                print("ID não encontrado!")
+            print("Controle excluído!")
 
         else:
             print("Nenhum controle cadastrado!")
@@ -114,101 +81,72 @@ while True:
     # UTILIZAR CONTROLE
     elif opcao == "5":
 
-        if len(controles) > 0:
+        if cadastrado == True:
 
-            id_busca = int(input("Digite o ID do controle que deseja utilizar: "))
+            while True:
 
-            controle_selecionado = None
+                print("\n===== FUNÇÕES DO CONTROLE =====")
+                print("1 - Ligar/Desligar")
+                print("2 - Aumentar volume")
+                print("3 - Diminuir volume")
+                print("4 - Próximo canal")
+                print("5 - Canal anterior")
+                print("0 - Voltar")
 
-            for controle in controles:
+                comando = input("Escolha: ")
 
-                if controle["id"] == id_busca:
-                    controle_selecionado = controle
+                if comando == "1": # LIGA OU DESLIGA A TV
+                    ligado = not ligado
+                    print("Estado da TV:", ligado)
+
+                elif comando == "2": # AUMENTA O VOLUME EM 10
+                    if ligado == True:
+                        if volume < 100:
+                            volume += 10
+                        print("Volume:", volume)
+                    else:
+                        print("A TV está desligada!")
+
+                elif comando == "3": # DIMINUI O VOLUME EM 10 
+                    if ligado == True:
+                        if volume > 0:
+                            volume -= 10
+                        print("Volume:", volume)
+                    else:
+                        print("A TV está desligada!")
+
+                elif comando == "4": # PASSA PARA O PROXIMO CANAL
+                    if ligado == True:
+                        canal += 1
+                        print("Canal:", canal)
+                    else:
+                        print("A TV está desligada!")
+
+                elif comando == "5": # VOLTA PRO CANAL ANTERIOR
+                    if ligado == True:
+                        if canal > 1:
+                            canal -= 1
+                        print("Canal:", canal)
+                    else:
+                        print("A TV está desligada!")
+
+                elif comando == "0": # SAI DO MENU DO CONTROLE
                     break
 
-            if controle_selecionado != None:
-
-                while True:
-
-                    print("\n===== FUNÇÕES DO CONTROLE =====")
-                    print("1 - Ligar/Desligar")
-                    print("2 - Aumentar volume")
-                    print("3 - Diminuir volume")
-                    print("4 - Próximo canal")
-                    print("5 - Canal anterior")
-                    print("0 - Voltar")
-
-                    comando = input("Escolha: ")
-
-                    if comando == "1":
-
-                        controle_selecionado["ligado"] = not controle_selecionado["ligado"]
-
-                        print("Estado da TV:", controle_selecionado["ligado"])
-
-                    elif comando == "2":
-
-                        if controle_selecionado["ligado"] == True:
-
-                            if controle_selecionado["volume"] < 100:
-                                controle_selecionado["volume"] += 10
-
-                            print("Volume:", controle_selecionado["volume"])
-
-                        else:
-                            print("A TV está desligada!")
-
-                    elif comando == "3":
-
-                        if controle_selecionado["ligado"] == True:
-
-                            if controle_selecionado["volume"] > 0:
-                                controle_selecionado["volume"] -= 10
-
-                            print("Volume:", controle_selecionado["volume"])
-
-                        else:
-                            print("A TV está desligada!")
-
-                    elif comando == "4":
-
-                        if controle_selecionado["ligado"] == True:
-
-                            controle_selecionado["canal"] += 1
-
-                            print("Canal:", controle_selecionado["canal"])
-
-                        else:
-                            print("A TV está desligada!")
-
-                    elif comando == "5":
-
-                        if controle_selecionado["ligado"] == True:
-
-                            if controle_selecionado["canal"] > 1:
-                                controle_selecionado["canal"] -= 1
-
-                            print("Canal:", controle_selecionado["canal"])
-
-                        else:
-                            print("A TV está desligada!")
-
-                    elif comando == "0":
-                        break
-
-                    else:
-                        print("Comando inválido!")
-
-            else:
-                print("ID não encontrado!")
+                else:
+                    print("Comando inválido!")
 
         else:
             print("Cadastre um controle primeiro!")
 
-    # SAIR
-    elif opcao == "0":
+    # SAIR 
 
+    elif opcao == "0": # ENCERRA
         print("Encerrando o programa...")
+        break
+
+    else:
+        print("Opção inválida!")
         break
 
     else:
