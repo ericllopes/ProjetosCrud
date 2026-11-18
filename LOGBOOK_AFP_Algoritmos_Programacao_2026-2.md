@@ -23,14 +23,14 @@
 
 | Campo | Preencha |
 |---|---|
-| **Nome do estudante** | _escreva aqui_ |
-| **Curso / Módulo** | _ex.: ADS · 2º período_ |
+| **Nome do estudante** | _Eric Teylon Lima Lopes_ |
+| **Curso / Módulo** | _ex.: ES · 2º período_ |
 | **Unidade curricular** | Algoritmos e Programação — UnDB 2026.2 |
 | **Professor** | Rondineli Seba Salomão |
-| **App-base do meu CRUD** | _ex.: um app de delivery, um app de músicas…_ |
-| **Link do meu repositório** | _https://github.com/…_ |
-| **Dupla de revisão (Campo 05)** | _nome do colega cujo CRUD vou revisar / que revisa o meu_ |
-| **Função neste ciclo** | _Autor do meu CRUD · Revisor do CRUD de um colega_ |
+| **App-base do meu CRUD** | _Sistema de gerenciamento de controle remoto de TV_ |
+| **Link do meu repositório** | _[https://github.com/…](https://github.com/ericllopes/ProjetosCrud/tree/main)_ |
+| **Dupla de revisão (Campo 05)** | _Gabriel Gusmão Serra_ |
+| **Função neste ciclo** | _Autor do meu CRUD_|
 
 ---
 
