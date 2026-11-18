@@ -106,9 +106,9 @@ Atualize a cada commit (troque ⬜ por ✅).
 
 | Grupo | Item | Prazo | Preenchido | Commit |
 |:--:|---|---|:--:|:--:|
-| 1 | Identificação | 16/11 | ⬜ | ⬜ |
-| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | ⬜ |
-| 1 | Campo 01 — Instrumento de entrada | 16/11 | ⬜ | ⬜ |
+| 1 | Identificação | 16/11 | ✅ | ✅ |
+| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ✅ | ✅ |
+| 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
 | 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
@@ -163,8 +163,8 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 > **Sugestão de ordem:** (1) Identificação → (2) **Campo 01 primeiro, sem consulta** → (3) Registros dos Ciclos 01 a 04 → (4) Campo 02, com pesquisa.
 
 **Checklist do Grupo 1**
-- [ ] Identificação preenchida (app-base, link do repositório, dupla de revisão)
-- [ ] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
+- [✅] Identificação preenchida (app-base, link do repositório, dupla de revisão)
+- [✅] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
 - [ ] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
 - [ ] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
 - [ ] Commits no GitHub e painel atualizado
@@ -213,19 +213,19 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
 **1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. _…_
-2. _…_
-3. _…_
+1. _Variáveis e tipos de dados: armazenamento e manipulação de informações utilizadas pelo programa._
+2. _Laços de repetição: utilização de estruturas for e while para executar instruções repetidamente._
+3. _Estruturas condicionais: utilização de if, elif e else para controlar o fluxo de execução do programa_
 4. _…_ *(opcional)*
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. _…_
-2. _…_
-3. _…_
+1. _Tinha dificuldade em compreender o funcionamento do for i e como utilizar o índice para percorrer elementos durante uma repetição._
+2. _Não conhecia listas em Python e precisava aprender como armazenar e acessar vários elementos em uma única estrutura._
+3. _Não conhecia dicionários e precisava compreender como armazenar informações organizadas em pares de chave e valor._
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
-> _…_
+> _Inicialmente, minha principal dificuldade era escolher um aplicativo-base para desenvolver o CRUD. Após definir o projeto, minha preocupação passou a ser como estruturar e programar suas funcionalidades em Python, considerando minhas limitações com algumas estruturas da linguagem. Eu tinha dúvidas sobre como transformar a ideia em um sistema funcional._
 
 ### 🧩 CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
