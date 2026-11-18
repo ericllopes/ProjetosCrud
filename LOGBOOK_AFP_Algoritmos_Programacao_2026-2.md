@@ -292,13 +292,13 @@ _
 </details>
 
 #### Registro do Ciclo 04 — 02/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Utilizar estruturas condicionais para controlar as funcionalidades do CRUD e estabelecer regras para o funcionamento do controle remoto._
+2. **O que implementei (commits / arquivos / links):** _Desenvolvi um menu de opções para cadastrar, visualizar, atualizar e excluir um controle remoto, além de um menu para utilizar suas funções. Implementei condicionais para verificar se existe um controle cadastrado, se a TV está ligada e se o volume e o canal respeitam seus limites._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Estruturas condicionais if, elif e else; operadores relacionais (==, <, >); valores booleanos (True e False); e condicionais aninhadas._
+4. **Desvio ou erro encontrado + causa técnica:** _Durante a revisão do código, identifiquei inconsistências na atualização e na exclusão do controle. Na atualização, atribuí o novo tipo à variável modelo, embora o programa utilize a variável tipo para exibir as informações. Na exclusão, também tentei limpar modelo em vez de limpar tipo. A causa foi a utilização de nomes de variáveis diferentes para representar a mesma informação._
+5. **Decisão de ajuste + fonte:** _Corrigir as atribuições para utilizar a variável tipo tanto na atualização quanto na exclusão. Também manter as verificações condicionais para impedir ações inadequadas, como alterar o volume quando a TV está desligada ou ultrapassar os limites de volume. Fonte: documentação oficial do Python, seção 4.1 — Instruções if (https://docs.python.org/pt-br/3/tutorial/controlflow.html)._
+6. **Feedback recebido e o que mudei:** _ A revisão do próprio código permitiu identificar inconsistências entre as variáveis utilizadas nas operações de atualização e exclusão. A partir disso, percebi a importância de manter os nomes e as atribuições coerentes durante a manipulação dos dados._
+7. **Próximo passo:** _Corrigir os problemas identificados e avançar na organização dos dados do CRUD, utilizando listas e dicionários._
 
 ---
 
