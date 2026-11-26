@@ -149,5 +149,3 @@ while True:
         print("Opção inválida!")
         break
 
-    else:
-        print("Opção inválida!")
