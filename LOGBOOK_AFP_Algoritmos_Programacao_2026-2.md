@@ -24,7 +24,7 @@
 | Campo | Preencha |
 |---|---|
 | **Nome do estudante** | _Eric Teylon Lima Lopes_ |
-| **Curso / Módulo** | _ex.: ES · 2º período_ |
+| **Curso / Módulo** | _ ES · 2º período_ |
 | **Unidade curricular** | Algoritmos e Programação — UnDB 2026.2 |
 | **Professor** | Rondineli Seba Salomão |
 | **App-base do meu CRUD** | _Sistema de gerenciamento de controle remoto de TV_ |
@@ -309,11 +309,11 @@ _
 > ⚠️ O prazo cai num **sábado**: planeje terminar na sexta. Os campos do Ciclo 03 (Checkpoint, 03 e 04) aparecem **primeiro**, porque são a base da investigação.
 
 **Checklist do Grupo 2**
-- [ ] Checkpoint Conceitual feito conforme orientação do professor (20 min, sem consulta)
-- [ ] Campo 03: 2 achados com objeto, 1 desvio com causa técnica, 1 decisão com fonte
-- [ ] Campo 04: ferramenta, pergunta íntegra, resumo, o que aceitei e o que questionei
-- [ ] Registros dos Ciclos 05, 06, 07 e 08 com os 7 itens (devolutiva da P1 no ciclo 06)
-- [ ] Commits no GitHub e painel atualizado
+- [✅] Checkpoint Conceitual feito conforme orientação do professor (20 min, sem consulta)
+- [✅] Campo 03: 2 achados com objeto, 1 desvio com causa técnica, 1 decisão com fonte
+- [✅] Campo 04: ferramenta, pergunta íntegra, resumo, o que aceitei e o que questionei
+- [✅] Registros dos Ciclos 05, 06, 07 e 08 com os 7 itens (devolutiva da P1 no ciclo 06)
+- [✅] Commits no GitHub e painel atualizado
 
 ## 🟠 CICLO 03 (campos) — 26/08 — Checkpoint, Campo 03 e Campo 04
 
@@ -346,7 +346,7 @@ _
 
 | | |
 |---|---|
-| **Nome do estudante** | _…_ |
+| **Nome do estudante** | _Eric Teylon Lima lopes_ |
 | **Data de realização** | _…_ |
 | **Unidade curricular** | Algoritmos e Programação |
 | **Professor(a)** | Rondineli Seba Salomão |
