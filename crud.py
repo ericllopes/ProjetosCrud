@@ -53,7 +53,7 @@ while True:
         case "3":
             if cadastrado == True:
                 marca = input("Digite a nova marca: ")
-                modelo = input("Digite o novo tipo: ")
+                tipo = input("Digite o novo tipo: ")
 
                 print("Controle atualizado!")
 
