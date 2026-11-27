@@ -8,7 +8,6 @@ ligado = False # indica se a tv esta ligada ou nao
 cadastrado = False # indica se existe um controle ou nao
 
 while True:
-  
     print("\n===== CONTROLE REMOTO =====")
     print("1 - Cadastrar controle")
     print("2 - Ver controle")
